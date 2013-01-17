@@ -4,12 +4,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Symfony2 Process Component
 Name:		php-symfony2-Process
-Version:	2.1.4
+Version:	2.1.6
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	3491b38a5905aaecc8f4628d97d55b18
+# Source0-md5:	73722f3f102a59109f3c49e25bdcf5cf
 URL:		http://pear.symfony.com/package/Process/
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR

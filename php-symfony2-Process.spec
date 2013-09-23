@@ -1,15 +1,14 @@
-%define		status		stable
 %define		pearname	Process
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
-Summary:	%{pearname} - Symfony2 Process Component
+Summary:	Symfony2 Process Component
 Name:		php-symfony2-Process
-Version:	2.1.6
+Version:	2.3.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	73722f3f102a59109f3c49e25bdcf5cf
+# Source0-md5:	355dd0bd79c2f5fbf8fb637496a0d95c
 URL:		http://pear.symfony.com/package/Process/
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
@@ -22,20 +21,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Symfony2 Process Component
-
-In PEAR status of this package is: %{status}.
+The Process Component executes commands in sub-processes.
 
 %prep
 %pear_package_setup
 
 # no packaging of tests
-rm -r .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests .
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist .
 
 # fixups
-mv .%{php_pear_dir}/Symfony/Component/%{pearname}/CHANGELOG.md .
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/.gitattributes
 mv docs/%{pearname}/Symfony/Component/%{pearname}/* .
 
 %install

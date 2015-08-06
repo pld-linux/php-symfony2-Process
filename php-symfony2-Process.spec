@@ -26,6 +26,8 @@ The Process Component executes commands in sub-processes.
 %prep
 %setup -q -n %{package}-%{version}
 
+%{__rm} Pipes/WindowsPipes.php
+
 %build
 phpab -n -e '*/Tests/*' -o autoloader.php .
 
@@ -44,3 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{php_pear_dir}/Symfony/Component/Process
 %{php_pear_dir}/Symfony/Component/Process/*.php
 %{php_pear_dir}/Symfony/Component/Process/Exception
+%{php_pear_dir}/Symfony/Component/Process/Pipes

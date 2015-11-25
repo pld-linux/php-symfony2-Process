@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Process Component
 Name:		php-symfony2-Process
-Version:	2.7.5
+Version:	2.7.7
 Release:	2
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	25905a0e748ded8135bb7b58fe5b3421
+# Source0-md5:	38d11536667962db6a1f1a2ff3d18293
 URL:		http://symfony.com/doc/2.7/components/process.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -29,7 +29,7 @@ The Process Component executes commands in sub-processes.
 %{__rm} Pipes/WindowsPipes.php
 
 %build
-phpab -n -e '*/Tests/*' -o autoloader.php .
+phpab -n -e '*/Tests/*' -o autoload.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT

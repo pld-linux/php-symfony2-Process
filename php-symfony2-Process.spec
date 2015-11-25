@@ -11,12 +11,10 @@ Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{
 # Source0-md5:	38d11536667962db6a1f1a2ff3d18293
 URL:		http://symfony.com/doc/2.7/components/process.html
 BuildRequires:	phpab
-BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(pcre)
 Requires:	php(spl)
-Requires:	php-pear >= 4:1.3.10
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

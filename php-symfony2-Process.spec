@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Process Component
 Name:		php-symfony2-Process
-Version:	2.7.7
-Release:	2
+Version:	2.7.8
+Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	38d11536667962db6a1f1a2ff3d18293
+# Source0-md5:	072cb1166ca9efc5cb6e7f1f737eee58
 URL:		http://symfony.com/doc/2.7/components/process.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610

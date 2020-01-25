@@ -1,6 +1,5 @@
 %define		package	Process
 %define		php_min_version 5.3.9
-%include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Process Component
 Name:		php-symfony2-Process
 Version:	2.7.8

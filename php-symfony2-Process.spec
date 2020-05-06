@@ -2,12 +2,12 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 Process Component
 Name:		php-symfony2-Process
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	072cb1166ca9efc5cb6e7f1f737eee58
+# Source0-md5:	f6e51698710400de3dd7056a4954a537
 URL:		http://symfony.com/doc/2.7/components/process.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
